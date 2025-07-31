@@ -1,0 +1,41 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int n;
+
+    cout << "Enter the number of elements you want: ";
+    cin >> n;
+
+    int* array = new int[n];
+    int* reversed_array = new int[n];
+
+    cout << "Enter an array of " << n << " numbers:\n";
+    for (int i = 0; i < n; i++) {
+        cin >> array[i];
+    }
+
+    for (int i = 0; i < n; i++) {
+        reversed_array[i] = array[n - 1 - i];  
+    }
+
+    cout << "\nThe reversed array is:\n";
+    for (int i = 0; i < n; i++) {
+        cout << reversed_array[i] << " ";
+    }
+    cout << "\n";
+
+
+
+    return 0;
+}
+/* OUTPUT
+
+Enter the number of elements you want: 6
+Enter an array of 6 numbers:
+7 8 9 4 5 6
+
+The reversed array is:
+6 5 4 9 8 7 
+
+*/
