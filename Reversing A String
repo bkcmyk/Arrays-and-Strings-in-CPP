@@ -1,0 +1,32 @@
+#include <iostream>
+#include <string>
+using namespace std;
+
+int main() {
+    string c, d;
+
+    cout << "Enter a string:\n";
+    cin >> c;
+
+    int i = c.length() - 1;
+    while (i >= 0) {
+        d += c[i];  
+        i--;
+    }
+
+cout<<endl;
+    cout << "You Entered String:\n" << c << "\n";
+    cout << "The Reversed String is:\n" << d << "\n";
+
+    return 0;
+}
+/* OUTPUT
+
+Enter a string:
+Hello
+
+You Entered String:
+Hello
+The Reversed String is:
+olleH
+*/
