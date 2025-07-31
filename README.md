@@ -1,4 +1,4 @@
-# Experiment 7 – Arrays and Strings (C++)
+# Arrays and Strings in C++
 
 ## Aim
 To study and implement C++ Arrays and Strings using practical programs for traversal, searching, reversal, and manipulation.
